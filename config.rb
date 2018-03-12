@@ -46,3 +46,14 @@ page '/*.txt', layout: false
 # end
 
 activate :directory_indexes
+
+activate :deploy do |deploy|
+  deploy.deploy_method = :rsync
+  deploy.host          = 'website-deploy@www.fawkesley.com'
+  deploy.path          = '/var/www/www.fawkesley.com'
+  # Optional Settings
+  # deploy.user  = '' # DOESNT WORK - https://github.com/middleman-contrib/middleman-deploy/issues/79
+  # deploy.port  = 5309 # ssh port, default: 22
+  deploy.clean = true # remove orphaned files on remote host, default: false
+  # deploy.flags = '-rltgoDvzO --no-p --del' # add custom flags, default: -avz
+end
