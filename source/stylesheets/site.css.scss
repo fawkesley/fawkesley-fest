@@ -77,6 +77,103 @@ body, html, main {
 
 
 
+#front-square-outer {
+  padding-top: 200px;
+  margin-bottom: 50px;
+
+  #front-square-inner {
+    color: white;
+    text-align: center;
+    max-width: 400px;
+    background-color: $transparent-red-color;
+    margin: 0 auto;
+    padding: 20px;
+
+    h2.date {
+      color: white;
+      font-size: $header-size * 0.6;
+      font-weight: normal;
+    }
+
+    table.fawkesley {
+      width: 200px;
+      margin: 0 auto;
+      color: white;
+      font-size: $header-size * 1;
+      font-weight: bold;
+      border: none;
+
+      td {
+        border: none;
+        width: 33%;
+        text-align: center;
+      }
+    }
+
+    h3.description {
+      color: white;
+      font-size: $header-size * 0.4;
+      font-weight: normal;
+    }
+
+
+  }
+
+}
+
+.when-where-about {
+  text-align: center;
+
+  margin-bottom: 100px;
+
+  > p {
+    text-transform: uppercase;
+    font-family: $font-family-heading;
+  }
+
+  > h2 {
+    @media only screen and (min-width:450px) {
+      font-size: $header-size * 1.5;
+    }
+
+
+  }
+}
+
+.short-programme {
+  text-align: center;
+  margin-bottom: 200px;
+
+  h2 {
+    a {
+      color: $header-color;
+    }
+
+  }
+  ul {
+    margin-left: 0;
+
+    li {
+      list-style: none;
+      font-size: $paragraph-size * 1.2;
+      text-transform: uppercase;
+
+      a {
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+
+        }
+
+      }
+    }
+
+  }
+
+}
+
+
 .floating-headline {
 
   padding: 200px 0 200px 0;
