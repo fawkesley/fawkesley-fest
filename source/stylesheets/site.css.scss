@@ -20,6 +20,8 @@ $paragraph-size       : rem(17px);
 $paragraph-line-height: 1.5em;
 $paragraph-margin     : 20px;
 
+$transparent-red-color: rgba(232, 41, 41, 0.8);
+
 // Header Styles
 $header-color      : #000000;
 $header-size       : rem(40px);
@@ -33,7 +35,7 @@ $blockquote-line-height: 1.5em;
 $blockquote-margin     : $paragraph-margin * 1.5;
 
 // Links
-$link-color: #4eaff6;
+$link-color: $paragraph-color;
 
 // hr
 $hr-margin: 30px;
@@ -44,7 +46,58 @@ $border-color: #DADADA;
 
 
 
+body, html, main {
+  height: 100%;
+}
 
+.cd-fixed-bg {
+  min-height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.cd-fixed-bg.cd-bg-1 {
+  background-image: url("../images/sefton-park.jpg");
+}
+.cd-fixed-bg.cd-bg-2 {
+  background-image: url("../images/three-graces.jpg");
+}
+.cd-fixed-bg.cd-bg-3 {
+  background-image: url("../images/another-place.jpg");
+}
+.cd-fixed-bg.cd-bg-4 {
+  background-image: url("../images/albert-dock.jpg");
+}
+
+.cd-scrolling-bg {
+  min-height: 100%;
+}
+
+
+
+.floating-headline {
+
+  padding: 200px 0 200px 0;
+  text-align: center;
+
+  h1 {
+    background-color: $header-color;
+    color: white;
+    border-radius: 5px;
+    margin-top: 0;
+    font-size: $header-size * 1.5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+}
+
+section.day {
+  margin-bottom: $hr-margin * 2;
+
+}
 
 /*------------------------------------*\
     # Type
@@ -66,7 +119,9 @@ h1, h2, h3, h4, h5, h6 {
     margin: $header-margin * 1.5 0 $header-margin 0;
     color: $header-color;
     line-height: $header-line-height;
-    font-weight: 400;
+    font-weight: 600;
+    font-family: $font-family-heading;
+    text-transform: uppercase;
 }
 
 h1 {
@@ -75,10 +130,27 @@ h1 {
 
 h2 {
     font-size: $header-size / 1.3;
+
+    &.activity {
+
+        text-align: center;
+        background-color: $header-color;
+        color: white;
+        margin-top: $header-margin * 3;
+        margin-bottom: 10px;
+        padding: 5px 0 5px 0;
+        border-radius: 2px;
+    }
+
 }
 
 h3 {
     font-size: $header-size / 1.5;
+
+    &.time {
+        margin-top: 0;
+        text-align: center;
+    }
 }
 
 h4 {
@@ -112,7 +184,9 @@ p {
 // Links
 a {
     color: $link-color;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: transparentize($link-color, 0.7);
+
     @include transition(all .2s ease);
 
     &:hover {

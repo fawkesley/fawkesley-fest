@@ -1,0 +1,364 @@
+---
+title: Full Programme | Fawkesley Fest
+---
+
+<section class="day">
+  <div class="cd-fixed-bg cd-bg-1">
+    <div class="floating-headline container">
+      <h1 id="friday">Friday</h1>
+    </div>
+  </div>
+
+  <div class="cd-scrolling-bg">
+    <div class="container cd-container">
+
+      <h2 id="climb-the-cathedral-tower" class="activity">Climb the cathedral tower</h2>
+      <h3 class="time">10.00 - 11.00</h3>
+
+      <p>
+      We’ll be climbing the cathedral tower for some beautiful views of the
+      city.
+      </p>
+
+      <p>
+      The tower is 101m high and is accessed via two lifts followed by 108
+      stairs. If you don’t like heights this isn’t for you!
+      </p>
+
+      <p>
+        <i class="fas fa-pound-sign fa-fw"></i> Price: £5.50 / £4.50
+      </p>
+
+      <%= partial(:map_link, :locals => { :name => 'Anglican Cathedral', :url => 'https://goo.gl/maps/JQCgGiwyb632' }) %>
+
+      <p>
+        <i class="fas fa-location-arrow fa-fw"></i>
+        Getting there: The cathedral is a 15 min walk from the city centre or a short taxi ride away.
+      </p>
+
+      <p>
+        <i class="fas fa-external-link-alt fa-fw"></i>
+        <%= link_to 'The tower experience', "http://www.liverpoolcathedral.org.uk/home/visiting-us/a-great-place-to-visit/the-tower-experience.aspx" %>
+      </p>
+
+      <h2 id="picnic-and-games-at-sefton-park" class="activity">Picnic and games at Sefton park</h2>
+      <h3 class="time">12.00 - 17.00</h3>
+
+      <p>
+        Picnic and games in one of our favourite green spaces in Liverpool. Bring your own picnic!
+      </p>
+
+      <p>
+        We’ll meet at the palm house at 12.00 and find a nice patch of grass
+        from there.
+      </p>
+
+      <p>
+        There’s a <%= link_to 'co-op on nearby Lark Lane', 'https://goo.gl/maps/eXJyJ14fz1H2' %>
+        if you want to pick up food en route.
+      </p>
+
+
+      <%= partial(:map_link, :locals => { :name => "Sefton Park palm house", :url => 'https://goo.gl/maps/E4JfMGMPDPu' }) %>
+
+      <!--<p>Text xxx on xxx to find out where we are if you come after that.</p>-->
+
+      <p>
+      <i class="fas fa-location-arrow fa-fw"></i>
+      Getting there:
+      </p>
+
+      <ul>
+        <li>The train costs £3.40 return and takes 6 minutes from Liverpool Central or Moorfields to <%= link_to 'St Michaels station', 'https://goo.gl/maps/KEMHE7cuht42' %>. From St Michaels it’s a 15 minute walk to the park via the delightful Lark Lane.</li>
+        <li>A taxi to Sefton park from the city centre will cost about £7 one way.</li>
+        <li>Driving: There is on street parking <%= link_to 'around the park.', 'https://goo.gl/maps/pKA8aHqKrxp' %></li>
+      </ul>
+
+      <!--TODO http://mersitalia.blogspot.co.uk/2010/09/-->
+
+      <h2 id="dinner-at-crust" class="activity">Dinner at Crust</h2>
+      <h3 class="time">18.00 - 21.00</h3>
+
+      <p>We’ll be carb loading on pizza, pasta and prosecco, come help us prepare for our big day!</p>
+
+      <!--TODO <p>We’ve got capacity for xxx, so message xxx on xxx to tell us you want to come.</p>-->
+
+      <%= partial(:map_link, :locals => { :name => "Crust on Bold Street", :url => 'https://goo.gl/maps/753TrpVwwfS2' }) %>
+
+      <p>
+        <i class="fas fa-location-arrow fa-fw"></i>
+        Getting there: Walk or taxi to Bold Street, close to Liverpool Central station.
+      </p>
+
+      <h2 id="drinks-at-east-ave" class="activity">Drinks at East Ave</h2>
+      <h3 class="time">21.00 - 00.00</h3>
+      <p>Come and join us for drinks at our favourite cafe, turned bar by night, East Avenue Bakehouse. </p>
+
+
+      <%= partial(:map_link, :locals => { :name => "East Avenue Bakehouse", :url => 'https://goo.gl/maps/PnJQMom7FQR2' }) %>
+
+
+      <p>
+        <i class="fas fa-location-arrow fa-fw"></i>
+        Getting there: Walk or taxi to the top of Bold Street, near the bombed out church.
+      </p>
+
+
+    </div>
+  </div>
+</section>
+
+
+<section class="day">
+  <div class="cd-fixed-bg cd-bg-2">
+    <div class="floating-headline container">
+      <h1 id="saturday">Saturday</h1>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <h2 id="civil-ceremony" class="activity">Civil ceremony</h2>
+    <h3 class="time">11.15 - 12.15</h3>
+
+    <p>Our ceremony is in the Grand Jury room at St George’s Hall in the city centre.</p>
+    <!--TODO <p>Please enter through the xxx entrance on xxx street.</p> -->
+
+    <p>
+      We have limited capacity in the Grand Jury room so we can’t fit you all in. We'll let you know closer to the time whether we can fit you in the ceremony.
+    </p>
+
+    <p>
+      If you aren’t attending the ceremony we hope you’ll join us for <%= link_to 'celebratory drinks', '#drinks-and-snacks-in-the-garden' %> straight after.
+    </p>
+
+    <p>
+    <i class="fas fa-map-marker-alt fa-fw"></i> <%= link_to "St. George's Hall", 'https://goo.gl/maps/6quskVAJ4Yz' %>
+    </p>
+
+    <p>
+      <i class="fas fa-location-arrow fa-fw"></i>
+      Getting there: St George’s Hall is in the city centre and so you can either walk or taxi there.
+    </p>
+
+
+    <h2 id="drinks-and-snacks-in-the-garden" class="activity">Drinks and snacks in the garden</h2>
+    <h3 class="time">12.15 - 13.45</h3>
+    <p>Everyone is welcome to join our celebratory drinks in St John’s gardens just behind St George’s Hall.</p>
+
+
+    <%= partial(:map_link, :locals => { :name => "St. John's gardens", :url => 'https://goo.gl/maps/FCjm6SRSn262' }) %>
+
+    <%= partial(:map_link, :locals => { :name => 'Liverpool Central Library', :url => 'https://goo.gl/maps/jGvQXkcNEJ3' }) %>
+
+    <h2 id="food-dance-and-party" class="activity">Food, dance and party</h2>
+    <h3 class="time">14.00 - 01.00</h3>
+
+    <p>
+      Come celebrate with us! Please arrive at 2pm so that we can sit down to
+      eat at 2.30pm.
+    </p>
+
+    <p>We’ll be having a crazy ceilidh so bring shoes that allow you to dance the night away!</p>
+
+    <p>
+      Please note, due to the licensing arrangements of our venue, under 18s
+      will need to leave by 11pm.
+    </p>
+
+    <%= partial(:map_link, :locals => { :name => 'Oh Me Oh My', :url => 'https://goo.gl/maps/VXmDmQrT5Ut' }) %>
+
+    <p>
+      <i class="fas fa-location-arrow fa-fw"></i>
+      Getting there: We’ll be having a procession en mass from St John’s
+      gardens to our party venue, Oh Me Oh My. The walk is flat and will take
+      15 minutes, if that’s not your thing (or if it plans to rain cats and dogs)
+      then please book a taxi.
+    </p>
+
+  </div>
+</section>
+
+
+<section class="day">
+  <div class="cd-fixed-bg cd-bg-3">
+    <div class="floating-headline container">
+      <h1 id="sunday">Sunday</h1>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <h2 id="brunch-at-east-ave" class="activity">Brunch at East Ave</h2>
+    <h3 class="time">10.00 - 11.30</h3>
+    <p>
+      Our favourite brunch place in the city.
+    </p>
+
+    <!-- <p>
+    Spaces limited, please tell xxx
+      on xxx if you’d like to join us and we’ll book you a place.
+    </p>-->
+
+    <%= partial(:map_link, :locals => { :name => "East Avenue Bakehouse", :url => 'https://goo.gl/maps/PnJQMom7FQR2' }) %>
+
+    <h2 id="bbq-at-crosby-beach" class="activity">BBQ at Crosby Beach</h2>
+    <h3 class="time">13.00 - 17.00</h3>
+    <p>
+      A beach BBQ among the dramatic statues of Antony Gormley’s Another Place at Crosby beach.
+    </p>
+
+    <p>
+      We’ll supply the BBQs and plates, bring your own food.
+    </p>
+
+    <%= partial(:map_link, :locals => { :name => 'Crosby Beach — meeting point', :url => 'https://goo.gl/maps/2LX1tR7HWTt' }) %>
+
+
+    <p>
+      <i class="fas fa-location-arrow fa-fw"></i>
+      Getting there:
+    </p>
+
+    <ul>
+      <li>Train: 20 minute journey, four trains an hour from Liverpool Central or Moorfields to <%= link_to 'Blundellsands and Crosby', 'https://goo.gl/maps/XaW8Z25A1uC2' %> (£3.90). From the station, walk down Blundellsands Road west to the end. A short footpath leads to the beach. Approximately 5/10 minutes.</li>
+      <li>Car: 20 minutes from the city centre. There are two car parks next to <%= link_to 'Crosby Lakeside Adventure Centre (L22 1RR)', 'https://goo.gl/maps/KdKNkU72MvR2' %></li>
+    </ul>
+
+    <p>
+      <i class="fas fa-external-link-alt fa-fw"></i>
+      <%= link_to 'Another Place — Sefton Council', "https://www.sefton.gov.uk/around-sefton/another-place-by-antony-gormley.aspx" %>
+    </p>
+
+
+    <h2 id="crazy-golf-at-jungle-rumble" class="activity">Crazy golf at Jungle Rumble</h2>
+    <h3 class="time">19.00 - 20.30</h3>
+    <p>
+      An oldie but a goodie! Our fave crazy golf course in the city.
+    </p>
+    <!-- TODO
+    <p>
+      Please tell xxx on xxx if you’d like to join us and we’ll book you a place.
+    </p>
+    -->
+
+
+    <p>
+      <i class="fas fa-pound-sign fa-fw"></i>
+      Golf + a large drink costs £10.
+    </p>
+
+    <%= partial(:map_link, :locals => { :name => 'Jungle Rumble', :url => 'https://goo.gl/maps/hZdR8F8NxJF2' }) %>
+
+
+    <p>
+      <i class="fas fa-external-link-alt fa-fw"></i>
+      <%= link_to 'Jungle Rumble website', 'http://junglerumble.co.uk/venues/liverpool/' %>
+    </p>
+
+    <h2 id="bar-crawl" class="activity">Bar crawl</h2>
+    <h3 class="time">20.30 - 00.00</h3>
+    <p>
+      Meet us at Jungle Rumble at 20.30 for a pub crawl around Liverpool. Let’s
+      start married life as we mean to go on!
+    </p>
+
+    <%= partial(:map_link, :locals => { :name => 'Jungle Rumble', :url => 'https://goo.gl/maps/hZdR8F8NxJF2' }) %>
+
+  </div>
+</section>
+
+<section class="day">
+
+  <div class="cd-fixed-bg cd-bg-4">
+    <div class="floating-headline container">
+      <h1 id="monday">Monday</h1>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2 id="watersports-in-the-albert-dock" class="activity">Watersports in the Albert Dock</h2>
+    <h3 class="time">10.30 - 12.00</h3>
+    <p>
+      This is a wonderful way to see the Albert Dock from the water. Lisa will
+      be leading a flotilla of paddleboarders and Paul will be heading up the
+      flock of kayaks.
+    </p>
+
+    <!-- TODO
+    <p>
+      Please tell xxx on xxx if you’d like to join us and we’ll book you a place.
+    </p>
+    -->
+
+    <p>Sailing, windsurfing and inflatable aquapark also available.</p>
+
+    <p>
+      <%= partial(:map_link, :locals => { :name => 'Meet at Liverpool watersports centre', :url => 'https://goo.gl/maps/qgXoYsGZQSM2' }) %>
+    </p>
+
+    <p>
+      <i class="fas fa-location-arrow fa-fw"></i>
+      Getting there: 20 minute walk from the city centre or short taxi journey.
+    </p>
+
+    <p>
+      <i class="fas fa-external-link-alt fa-fw"></i>
+      <%= link_to 'Liverpool Watersports Centre activities', 'http://www.liverpoolwatersports.org.uk/activities' %>
+    </p>
+
+    <h2 id="afternoon-tea-at-the-panoramic" class="activity">Afternoon tea at the Panoramic</h2>
+    <h3 class="time">13.00 - 15.00</h3>
+
+    <p>Enjoy spectacular views of the city from the 34th floor of West Tower.</p>
+
+    <p>
+      <i class="fas fa-pound-sign fa-fw"></i>
+      Price is £22 per person
+    </p>
+
+    <%= partial(:map_link, :locals => { :name => 'Panoramic 34', :url => 'https://goo.gl/maps/U6NCwqKvE572' }) %>
+
+    <p>
+      <i class="fas fa-external-link-alt fa-fw"></i>
+      <%= link_to 'Panoramic website', "http://www.panoramic34.com/" %>
+    </p>
+
+
+    <h2 id="board-games-at-sugar-and-dice" class="activity">Board games at Sugar and Dice</h2>
+    <h3 class="time">16.00 - 19.00</h3>
+    <p>
+      An afternoon of board games, tea and cake to round off our weekend. Sugar and Dice have hundreds of board games and can recommend and help you set up.
+    </p>
+
+    <p>
+      Highlights are the delicious home-baked cakes, drinks and locally brewed beers too.
+    </p>
+
+    <p>
+      <i class="fas fa-pound-sign fa-fw"></i>
+      Cover fee of £2 per person (£5 maximum) plus food and drink
+    </p>
+
+
+    <!--
+    <p>
+      Please tell xxx on xxx if you’d like to join us and we’ll book you a place.
+    </p>
+    -->
+
+    <%= partial(:map_link, :locals => { :name => 'Sugar and Dice', :url => 'https://goo.gl/maps/U6NCwqKvE572' }) %>
+
+    <p>
+      <i class="fas fa-location-arrow fa-fw"></i>
+      Getting there: It's 3 minutes walk from our house in the city centre.
+    </p>
+
+    <p>
+      <i class="fas fa-external-link-alt fa-fw"></i>
+      <%= link_to 'Sugar and Dice — how it works', "http://sugaranddice.co.uk/how-it-works/" %>
+    </p>
+
+
+  </div>
+</section>
