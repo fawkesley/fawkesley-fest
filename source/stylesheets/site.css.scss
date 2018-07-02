@@ -442,3 +442,42 @@ img {
     max-width: 100%;
     margin: $blockquote-margin 0;
 }
+
+h2.fully-booked {
+  text-decoration: line-through;
+
+}
+
+p.fully-booked {
+  font-weight: bold;
+  text-align: center;
+
+  span {
+    background-color: #f69d9d;
+    padding: 5px;
+  }
+}
+
+p.open-to-all {
+  font-weight: bold;
+  text-align: center;
+
+  span {
+    background-color: #e3ffc6;
+    padding: 5px;
+  }
+}
+
+p.come-but-book {
+  font-weight: bold;
+  text-align: center;
+
+  span {
+    background-color: #ffd993;
+    padding: 5px;
+  }
+}
+
+p.attendees {
+  font-size: 70%;
+}
