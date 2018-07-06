@@ -78,10 +78,10 @@ title: Full Programme | Fawkesley Fest
 
       <!--TODO http://mersitalia.blogspot.co.uk/2010/09/-->
 
-      <h2 id="dinner-at-crust" class="activity fully-booked">Dinner at Crust</h2>
+      <h2 id="dinner-at-crust" class="activity">Dinner at Crust</h2>
       <h3 class="time">18.00 - 21.00</h3>
 
-      <%= partial(:fully_booked) %>
+      <%= partial(:come_but_book, :locals => {:text => 'Extra spaces may be available — email paulandlisa@fawkesley.com'}) %>
 
       <p>We’ll be carb loading on pizza, pasta and prosecco, come help us prepare for our big day!</p>
 
@@ -249,7 +249,7 @@ title: Full Programme | Fawkesley Fest
 
     <h2 id="crazy-golf-at-jungle-rumble" class="activity">Crazy golf at Jungle Rumble</h2>
     <h3 class="time">19.00 - 20.30</h3>
-    <%= partial(:come_but_book) %>
+    <%= partial(:come_but_book, :locals => {:text => 'Extra spaces may be available — ask Lorna (Golf Master)'}) %>
 
     <p>
       An oldie but a goodie! Our fave crazy golf course in the city.
@@ -297,7 +297,7 @@ title: Full Programme | Fawkesley Fest
   <div class="container">
     <h2 id="watersports-in-the-albert-dock" class="activity">Watersports in the Albert Dock</h2>
     <h3 class="time">10.30 - 12.00</h3>
-    <%= partial(:come_but_book) %>
+    <%= partial(:come_but_book, :locals => {:text => 'Extra spaces may be available — ask Jo F (Watersports Master)'}) %>
     <p>
       This is a wonderful way to see the Albert Dock from the water. Lisa will
       be leading a flotilla of paddleboarders and Paul will be heading up the
@@ -357,7 +357,7 @@ title: Full Programme | Fawkesley Fest
 
     <h2 id="board-games-at-sugar-and-dice" class="activity">Board games at Sugar and Dice</h2>
     <h3 class="time">16.00 - 19.00</h3>
-    <%= partial(:come_but_book) %>
+    <%= partial(:come_but_book, :locals => {:text => 'Extra spaces may be available — ask Meg / Rachel (Games Master)'}) %>
     <p>
       An afternoon of board games, tea and cake to round off our weekend. Sugar and Dice have hundreds of board games and can recommend and help you set up.
     </p>
