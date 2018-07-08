@@ -92,9 +92,7 @@ title: Full Programme | Fawkesley Fest
         Getting there: Walk or taxi to Bold Street, close to Liverpool Central station.
       </p>
 
-      <p class="attendees">
-      Booked: Lisa, Paul, Lorna, Ol, Shona, Chris Ramsey, Rose P, Tim Dog, Sara, Jill, Nick, Steve, Sarah and Osc, Lucy, Marcin, Jo F, John F, Mary, Will, Mark S, Dave L, Olivia, Mark I, Matt K, Laura H, Hazel, Jo S, Gav, Dan, Adele, Benjamin, Carisse, Blunt, Bettina and Theo, Clemens, Melissa, Henri, Jenni, Bea, Ian, Bett, Isla, Barny, Amy, Rose R, Sym, Dave S, Simon, Anne, Maham, Alex W, Hannah, Martin, Mirela
-      </p>
+      <%= partial(:see_whos_booked) %>
 
 
       <h2 id="drinks-at-east-ave" class="activity fully-booked">Drinks at East Ave</h2>
@@ -111,10 +109,7 @@ title: Full Programme | Fawkesley Fest
         Getting there: Walk or taxi to the top of Bold Street, near the bombed out church.
       </p>
 
-      <p class="attendees">
-      Booked: Lisa, Paul, Lorna, Oliver, Rose P, Chris Ramsey, Tim Dog, Sara, Lucy, Marcin, Shaun, Ioana, Jo F, John F, Mary, Shona, Will, Mark S, Dave L, Olivia, Mark I, Hazel, Jo S, Gav, Blunt, Anna, Ryan, Henri, Jenni, Bea, Ian, Barnaby, Amy M, Matt, Laura, Jill, Nick, Dave S, Nayeema, Rob
-      </p>
-
+      <%= partial(:see_whos_booked) %>
 
 
     </div>
@@ -224,23 +219,25 @@ title: Full Programme | Fawkesley Fest
       An oldie but a goodie! Our fave crazy golf course in the city.
     </p>
 
-    <p class="attendees">
-    Booked: Lisa, Paul, Lorna, Oliver, Tim, Sara, Sarah and Oscar, John F, Mary, Will, Mark S, Dave L, Olivia, Blunt, Henri, Jenni, Ian, Isla, Bett, Matt K, Laura H, Rose R, Sym, Dave S, Jill, Nick, Hannah, Martin
-    </p>
-
-
     <p>
       <i class="fas fa-pound-sign fa-fw"></i>
       Golf + a large drink costs £10.
     </p>
 
-    <%= partial(:map_link, :locals => { :name => 'Jungle Rumble', :url => 'https://goo.gl/maps/hZdR8F8NxJF2' }) %>
+    <p>
+      <i class="fas fa-location-arrow fa-fw"></i>
+      Getting there: Head towards the Odeon in Liverpool ONE, find the escalators then take the <b>stairs</b> or lift, as Jungle Rumble is half-way up.
+    </p>
 
+
+    <%= partial(:map_link, :locals => { :name => 'Jungle Rumble', :url => 'https://goo.gl/maps/hZdR8F8NxJF2' }) %>
 
     <p>
       <i class="fas fa-external-link-alt fa-fw"></i>
       <%= link_to 'Jungle Rumble website', 'http://junglerumble.co.uk/venues/liverpool/' %>
     </p>
+
+    <%= partial(:see_whos_booked) %>
 
     <h2 id="bbq-at-west-kirby-beach" class="activity">BBQ at West Kirby Beach</h2>
     <h3 class="time">15.30 - 18.30</h3>
@@ -371,9 +368,7 @@ title: Full Programme | Fawkesley Fest
       <%= link_to 'Panoramic website', "http://www.panoramic34.com/" %>
     </p>
 
-    <p class="attendees">
-    Booked: Lisa, Paul, Jill, Nick, Jo , John, Oliver, Shona, Mary, Tim, Sara, Blunt, Lorna, Sarah and Osc, Shaun, Ioana, Bett, Isla, Bill, Inga
-    </p>
+    <%= partial(:see_whos_booked) %>
 
 
     <h2 id="board-games-at-sugar-and-dice" class="activity">Board games at Sugar and Dice</h2>
@@ -411,10 +406,7 @@ title: Full Programme | Fawkesley Fest
       <%= link_to 'Sugar and Dice — how it works', "http://sugaranddice.co.uk/how-it-works/" %>
     </p>
 
-    <p class="attendees">
-    Booked: Lisa, Paul, Gerry P, Blunt, Ian, Isla, Bett
-    </p>
-
+    <%= partial(:see_whos_booked) %>
 
   </div>
 </section>
