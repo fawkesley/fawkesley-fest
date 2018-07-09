@@ -211,33 +211,6 @@ title: Full Programme | Fawkesley Fest
 
   <div class="container">
 
-    <h2 id="crazy-golf-at-jungle-rumble" class="activity">Crazy golf at Jungle Rumble</h2>
-    <h3 class="time">12.00 - 14.00</h3>
-    <%= partial(:come_but_book, :locals => {:text => 'Extra spaces may be available — ask Lorna (Golf Master)'}) %>
-
-    <p>
-      An oldie but a goodie! Our fave crazy golf course in the city.
-    </p>
-
-    <p>
-      <i class="fas fa-pound-sign fa-fw"></i>
-      Golf + a large drink costs £10.
-    </p>
-
-    <p>
-      <i class="fas fa-location-arrow fa-fw"></i>
-      Getting there: Head towards the Odeon in Liverpool ONE, find the escalators then take the <b>stairs</b> or lift, as Jungle Rumble is half-way up.
-    </p>
-
-
-    <%= partial(:map_link, :locals => { :name => 'Jungle Rumble', :url => 'https://goo.gl/maps/hZdR8F8NxJF2' }) %>
-
-    <p>
-      <i class="fas fa-external-link-alt fa-fw"></i>
-      <%= link_to 'Jungle Rumble website', 'http://junglerumble.co.uk/venues/liverpool/' %>
-    </p>
-
-    <%= partial(:see_whos_booked) %>
 
     <h2 id="bbq-at-west-kirby-beach" class="activity">BBQ at West Kirby Beach</h2>
     <h3 class="time">15.30 - 18.30</h3>
@@ -277,12 +250,39 @@ title: Full Programme | Fawkesley Fest
     </ul>
 
 
+    <h2 id="crazy-golf-at-jungle-rumble" class="activity">Crazy golf at Jungle Rumble</h2>
+    <h3 class="time">20.30 - 22.00</h3>
+    <%= partial(:come_but_book, :locals => {:text => 'Extra spaces may be available — ask Lorna (Golf Master)'}) %>
+
+    <p>
+      An oldie but a goodie! Our fave crazy golf course in the city.
+    </p>
+
+    <p>
+      <i class="fas fa-pound-sign fa-fw"></i>
+      Golf + a large drink costs £10.
+    </p>
+
+    <p>
+      <i class="fas fa-location-arrow fa-fw"></i>
+      Getting there: Head towards the Odeon in Liverpool ONE, find the escalators then take the <b>stairs</b> or lift, as Jungle Rumble is half-way up.
+    </p>
+
+
+    <%= partial(:map_link, :locals => { :name => 'Jungle Rumble', :url => 'https://goo.gl/maps/hZdR8F8NxJF2' }) %>
+
+    <p>
+      <i class="fas fa-external-link-alt fa-fw"></i>
+      <%= link_to 'Jungle Rumble website', 'http://junglerumble.co.uk/venues/liverpool/' %>
+    </p>
+
+    <%= partial(:see_whos_booked) %>
     <!--============================================================================================================================================-->
     <h2 id="bar-crawl" class="activity">Bar crawl</h2>
-    <h3 class="time">20.30 - 00.00</h3>
+    <h3 class="time">22.00 - 00.00</h3>
     <%= partial(:open_to_all, :locals => { :text => "Open to all!" }) %>
     <p>
-      Meet us at Furnival's Well at 20.30 for a pub crawl around Liverpool. Let’s
+      Meet us at Furnival's Well at 22.00 to hit a few pubs around Liverpool. Let’s
       start married life as we mean to go on!
     </p>
 
@@ -290,11 +290,11 @@ title: Full Programme | Fawkesley Fest
       Here's the rough plan:
     </p>
 
-    <%= partial(:map_link, :locals => { :name => "Furnival's Well on Argyle Street", :url => 'https://goo.gl/maps/CdYWS3ZwfCt' }) %> (private room 20.30 to 22.00)
+    <%= partial(:map_link, :locals => { :name => "Furnival's Well on Argyle Street", :url => 'https://goo.gl/maps/CdYWS3ZwfCt' }) %> (private room 22.00 to 23.00)
     <%= partial(:map_link, :locals => { :name => 'The Merchant on Slater street', :url => 'https://goo.gl/maps/R42ZZAECj9v' }) %>
     <%= partial(:map_link, :locals => { :name => 'LEAF on Bold street', :url => 'https://goo.gl/maps/jVsewW2hwNC2' }) %>
-    <%= partial(:map_link, :locals => { :name => 'Philharmonic Dining Rooms on Hope street', :url => 'https://goo.gl/maps/CV3xZ5U1U1R2' }) %>
-    <%= partial(:map_link, :locals => { :name => "Frederick's on Hope street", :url => 'https://goo.gl/maps/x6Q31Uo8MiQ2' }) %>
+    <!--<%= partial(:map_link, :locals => { :name => 'Philharmonic Dining Rooms on Hope street', :url => 'https://goo.gl/maps/CV3xZ5U1U1R2' }) %>-->
+    <!--<%= partial(:map_link, :locals => { :name => "Frederick's on Hope street", :url => 'https://goo.gl/maps/x6Q31Uo8MiQ2' }) %>-->
 
   </div>
 </section>
